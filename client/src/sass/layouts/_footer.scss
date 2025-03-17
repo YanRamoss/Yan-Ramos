@@ -1,0 +1,13 @@
+footer {
+    * {
+        @include font(white, unset, unset, unset);
+    }
+
+    @include flex(row, space-between, center, unset);
+    background-color: rgb(41, 41, 41);
+    padding: 50px 150px;
+
+    svg {
+        fill: white;
+    }
+}

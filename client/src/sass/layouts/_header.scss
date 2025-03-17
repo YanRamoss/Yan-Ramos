@@ -1,0 +1,33 @@
+header {
+  @include flex(row, space-between, center, unset);
+  @include prop(fixed, 100vw, auto);
+  background-color: rgba(0, 0, 0, 0.637);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 15px 100px;
+  z-index: 100;
+  font-family: $default-font;
+
+  >div {
+    @include flex(row, space-between, center, 35px);
+  }
+
+  a {
+    @include font(white, 15px, 400, unset);
+    @include text(unset, unset, unset, unset);
+  }
+
+  >a:last-child {
+    @include font(white, 14px, 500, unset);
+    letter-spacing: 0.6px;
+    background-color: $darken-color;
+    padding: 5px 18px;
+    border-radius: 2px;
+  }
+
+  >div a:hover {
+    color: $lightier-color;
+    transition: 0.3s;
+  }
+}

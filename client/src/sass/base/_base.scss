@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $default-font;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+}
+
+a {
+  @include font($darken-color, unset, unset, unset);
+  @include text(unset, 0.2px 0.2px 0.2px rgba(117, 117, 117, 0.527), unset, unset);
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: justify
+}
+
+#app {
+  @include flex(column, unset, unset, unset);
+  @include prop(relative, unset, unset);
+}

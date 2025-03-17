@@ -1,0 +1,39 @@
+@mixin flex($direction, $justify, $align, $gap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin font($color, $size, $weight, $family) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $family;
+}
+
+@mixin text($transform, $shadow, $decoration, $align) {
+  text-transform: $transform;
+  text-shadow: $shadow;
+  text-decoration: $decoration;
+  text-align: $align;
+}
+
+@mixin prop($position, $width, $height) {
+  position: $position;
+  width: $width;
+  height: $height;
+}
+
+@mixin media-screen($w) {
+  @media screen and (max-width: $w) {
+    @content;
+  }
+}
+
+@mixin media-screen-column {
+  @include media-screen(576px) {
+    @include flex(column);
+  }
+}

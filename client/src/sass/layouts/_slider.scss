@@ -1,0 +1,26 @@
+.slider {
+    @include flex(column, center, unset, unset);
+    @include prop(relative, 100vw, unset);
+    min-height: 450px;
+    background-color: rgb(167, 167, 167);
+    background-image: url('@/assets/imagem3.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    opacity: 1;
+
+    h1,
+    h2 {
+        padding: 0px 150px;
+    }
+
+    h1 {
+        @include font($lightier-color, 30px, 900, $secondTitle-font);
+        @include text(unset, 0.5px 1px 2px rgb(68, 68, 68), unset, unset);
+    }
+
+    h2 {
+        @include font(white, 26px, 500, $title-font);
+    }
+}

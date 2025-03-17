@@ -1,0 +1,126 @@
+.section {
+    @include flex(row, unset, unset, 50px);
+    @include prop(relative, auto, auto);
+    padding: 50px 150px;
+
+    >div {
+        @include flex(column, unset, unset, unset);
+        @include prop(relative, 50%, auto);
+    }
+
+    p {
+        line-height: 30px;
+    }
+}
+
+#about {
+    img {
+        width: 75%;
+        clip-path: polygon(0 31%, 8% 15%, 15% 0, 85% 0%, 100% 0, 100% 15%, 100% 75%, 94% 88%, 88% 100%, 15% 100%, 0 100%, 0% 85%);
+        border-radius: 3px;
+    }
+}
+
+#services {
+    background-color: #f8f8f8;
+
+    .section>:nth-child(2) {
+
+        border-radius: 2px;
+        box-shadow: 2px 2px 5px rgba(136, 136, 136, 0.548);
+
+        >ul {
+            @include flex(column, unset, unset, unset);
+            padding: 25px 10px;
+            letter-spacing: 0.8px;
+
+            ul,
+            li {
+                margin: 2px 0px 2px 25px;
+                list-style: none;
+            }
+
+            >li {
+                @include font($darken-color, 17px, 600, $default-font);
+                @include text(uppercase, unset, unset, unset);
+                line-height: 25px;
+            }
+
+            >ul>li {
+                @include prop(relative, unset, unset);
+                padding-left: 20px;
+
+                &:before {
+                    content: '';
+                    @include prop(absolute, 6px, 6px);
+                    top: 50%;
+                    left: 6px;
+                    transform: translateY(-50%);
+                    border-radius: 50%;
+                    background-color: $lightier-color;
+                }
+            }
+        }
+    }
+}
+
+
+#contact {
+    background-color: rgba(0, 0, 0, 0.637);
+
+    form {
+        @include flex(column, unset, unset, unset);
+
+        >div {
+            @include flex(column, unset, unset, unset);
+
+            >label {
+                margin: 10px 0px 0px 0px;
+                color: white;
+            }
+
+            >input,
+            textarea {
+                padding: 8px 11px;
+                outline: none;
+                border: none;
+                border-radius: 1px;
+            }
+
+            &:nth-child(5) {
+                @include flex(column, center, center, unset);
+
+                >input {
+                    @include prop(relative, 80px, auto);
+                    @include font(white, 13px, 600, $secondTitle-font);
+                    letter-spacing: 0.3px;
+                    background-color: $darken-color;
+                    border: none;
+                    margin: 10px 0px 0px 0px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    >.section:nth-child(2) {
+
+        h2,
+        h3 {
+            margin: 10px 0px;
+        }
+
+        h2 {
+            @include font($lightier-color, unset, 600, $title-font);
+        }
+
+        h3 {
+            @include font(white, unset, 400, $default-font);
+        }
+
+    }
+
+}
