@@ -31,9 +31,3 @@
     @content;
   }
 }
-
-@mixin media-screen-column {
-  @include media-screen(576px) {
-    @include flex(column);
-  }
-}
