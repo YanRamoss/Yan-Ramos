@@ -1,5 +1,5 @@
 <template>
-    <footer class="section">
+    <footer>
         <div class="column">
             <router-link to="/">Yan Ramos</router-link>
         </div>

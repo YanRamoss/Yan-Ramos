@@ -1,7 +1,7 @@
 .section {
     @include flex(row, unset, unset, 50px);
     @include prop(relative, auto, auto);
-    padding: 50px 150px;
+    padding: 50px 0px;
 
     >div {
         @include flex(column, unset, unset, unset);

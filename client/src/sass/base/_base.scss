@@ -26,5 +26,9 @@ p {
 
 #app {
   @include flex(column, unset, unset, unset);
-  @include prop(relative, unset, unset);
+  @include prop(relative, 100vw, unset);
+}
+
+.section {
+  margin: 0px 150px;
 }

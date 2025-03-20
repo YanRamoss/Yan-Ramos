@@ -1,0 +1,14 @@
+.img {
+    @include flex(row, center, center, unset);
+    @include prop(relative, auto, auto);
+    margin: 25px 0px 0px 0px;
+
+    >img {
+        width: 160px;
+        border-radius: 50%;
+    }
+}
+
+.title {
+    margin: 10px;
+}
