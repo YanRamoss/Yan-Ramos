@@ -7,7 +7,7 @@
     }
 
     h2 {
-        @include font(rgba(53, 53, 53, 0.527), 16px, 670, $third-font);
+        @include font(rgba(53, 53, 53, 0.527), 16px, 670, $first-font);
         @include text(uppercase, unset, unset, center);
         margin: 15px;
     }

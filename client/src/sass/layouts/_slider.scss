@@ -2,7 +2,7 @@
     @include flex(column, center, unset, unset);
     @include prop(relative, 100vw, unset);
     min-height: 450px;
-    background-color: rgb(167, 167, 167);
+    background-color: rgb(122, 122, 122);
     background-image: url('@/assets/imagem3.jpg');
     background-size: cover;
     background-repeat: repeat;
@@ -11,8 +11,9 @@
     opacity: 1;
 
     h1,
-    h2 {
-        padding: 0px 150px;
+    h2,
+    a {
+        margin: 0px 150px;
     }
 
     h1 {
@@ -22,5 +23,21 @@
 
     h2 {
         @include font(white, 26px, 500, $second-font);
+    }
+
+    a {
+        @include prop(relative, 150px, auto);
+        @include font(white, 18px, 400, $third-font);
+        @include text(unset, unset, unset, center);
+        letter-spacing: 0.8px;
+        margin-top: 20px;
+        padding: 5px 0px;
+        border: solid 1px white;
+
+        &:hover {
+            border: solid 1px $first-color;
+            color: $first-color;
+            transition: 0.5s;
+        }
     }
 }

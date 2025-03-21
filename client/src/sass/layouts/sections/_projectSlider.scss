@@ -1,7 +1,7 @@
 .slider {
     @include flex(row, space-evenly, unset, 20px);
     @include prop(relative, auto, auto);
-    margin: 10px 150px;
+    margin: 50px 150px;
     padding: 1px 1px;
     overflow: hidden;
 

@@ -7,7 +7,7 @@
         />
         <div class="section">
           <div class="column">
-            <img src="../assets/Fotos.png" alt="Trajetória" />
+            <img src="../../assets/Fotos.png" alt="Trajetória" />
           </div>
           <div class="column">
             <p>
@@ -38,6 +38,7 @@
       <TitleComponent
         title="Serviços"
         subtitle="Soluções eficientes para suas necessidades"
+        subcolor="rgb(187, 129, 3)"
       />
       <div class="section">
         <div class="column">
@@ -80,8 +81,6 @@
       <TitleComponent
           title="Contato"
           subtitle="Caso possua alguma dúvida ou queira solicitar um orçamento, entre em contato"
-          color="white"
-          subcolor="rgb(255,174,0)"
         />
         <div class="section">
           <div class="column">
@@ -143,5 +142,5 @@ export default class HomeView extends Vue {
 }
 </script>
 <style lang="scss" scoped>
-@import '../sass/pages/_home.scss';
+@import '../../sass/pages/public/_home.scss';
 </style>

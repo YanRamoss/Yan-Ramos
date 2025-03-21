@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="img">
-      <img src="../assets/Perfil.jpg" alt="">
+      <img src="../../assets/Perfil.jpg" alt="">
     </div>
     <TitleComponent title="Yan dos Santos Ramos" subtitle="Técnico em Desenvolvimento de Sistemas, Graduando em Engenharia de Software" />
     <div id="qualyfications">
@@ -34,11 +34,11 @@
 
           Procurar e apresentar os ícones das tecnologias listadas abaixo
 
-          HTML, CSS, JavaScript, TypeScript, PHP, Java, C, C++, C#, VBA
-          Ajax, Node, React, Next.js, Prisma, TailwindCSS, SASS, Bootstrap
+          HTML, CSS, JavaScript, TypeScript, PHP, Java, C, C++, C#, VBA?
+          Ajax?, Node, React, Next.js, Prisma, TailwindCSS, SASS, Bootstrap
           Apache, Nginx, Docker
           MySQL, MongoDB, PostgreSQL
-          Postman, Figma, Photoshop, Canva
+          Postman, Insomnia, Figma, Photoshop, Canva
           -->
         </div>
       </div>
@@ -66,5 +66,5 @@ export default class PortfolioView extends Vue {
 }
 </script>
 <style lang="scss" scoped>
-@import '../sass/pages/portfolio';
+@import '../../sass/pages/public/portfolio';
 </style>
