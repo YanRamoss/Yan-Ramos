@@ -41,7 +41,7 @@
             }
 
             >li {
-                @include font($darken-color, 17px, 600, $default-font);
+                @include font($second-color, 17px, 600, $first-font);
                 @include text(uppercase, unset, unset, unset);
                 line-height: 25px;
             }
@@ -57,7 +57,7 @@
                     left: 6px;
                     transform: translateY(-50%);
                     border-radius: 50%;
-                    background-color: $lightier-color;
+                    background-color: $first-color;
                 }
             }
         }
@@ -92,9 +92,9 @@
 
                 >input {
                     @include prop(relative, 80px, auto);
-                    @include font(white, 13px, 600, $secondTitle-font);
+                    @include font(white, 13px, 600, $third-font);
                     letter-spacing: 0.3px;
-                    background-color: $darken-color;
+                    background-color: $second-color;
                     border: none;
                     margin: 10px 0px 0px 0px;
 
@@ -114,11 +114,11 @@
         }
 
         h2 {
-            @include font($lightier-color, unset, 600, $title-font);
+            @include font($first-color, unset, 600, $second-font);
         }
 
         h3 {
-            @include font(white, unset, 400, $default-font);
+            @include font(white, unset, 400, $first-font);
         }
 
     }

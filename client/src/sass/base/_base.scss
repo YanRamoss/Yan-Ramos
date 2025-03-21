@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: $default-font;
+  font-family: $first-font;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 }
 
 a {
-  @include font($darken-color, unset, unset, unset);
+  @include font($second-color, unset, unset, unset);
   @include text(unset, 0.2px 0.2px 0.2px rgba(117, 117, 117, 0.527), unset, unset);
 }
 

@@ -47,7 +47,7 @@
     }
 
     a {
-        border: solid 1.5px $lightier-color;
+        border: solid 1.5px $first-color;
         padding: 8px;
         border-radius: 2px;
     }
@@ -59,12 +59,12 @@
     margin: 10px 15px 15px 15px;
 
     h3 {
-        @include font($darken-color, 16px, 600, $secondTitle-font);
+        @include font($second-color, 16px, 600, $third-font);
         @include text(uppercase, unset, unset, center);
     }
 
     p {
-        @include font(unset, 15px, 400, $default-font);
+        @include font(unset, 15px, 400, $first-font);
         letter-spacing: 0.5px;
         text-align: justify;
     }

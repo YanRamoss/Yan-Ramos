@@ -16,11 +16,11 @@
     }
 
     h1 {
-        @include font($lightier-color, 30px, 900, $secondTitle-font);
+        @include font($first-color, 30px, 900, $third-font);
         @include text(unset, 0.5px 1px 2px rgb(68, 68, 68), unset, unset);
     }
 
     h2 {
-        @include font(white, 26px, 500, $title-font);
+        @include font(white, 26px, 500, $second-font);
     }
 }
