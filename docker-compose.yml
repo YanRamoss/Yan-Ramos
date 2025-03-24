@@ -1,7 +1,14 @@
-version: "3"
+version: '3.8'
+
 services:
-  vue-client:
-    build: ./client
+  client:
+    build:
+      context: ./client
     ports:
       - "8080:80"
-    restart: always
+    networks:
+      - web
+
+networks:
+  web:
+    driver: bridge
