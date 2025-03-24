@@ -1,5 +1,5 @@
 # Etapa 1: Construção do projeto Vue
-FROM node:18-alpine AS build
+FROM node:20 AS build
 WORKDIR /client
 COPY package*.json ./
 RUN npm install
