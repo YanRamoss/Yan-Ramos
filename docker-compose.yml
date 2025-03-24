@@ -4,11 +4,6 @@ services:
   client:
     build:
       context: ./client
+      dockerfile: Dockerfile
     ports:
       - "8080:80"
-    networks:
-      - web
-
-networks:
-  web:
-    driver: bridge

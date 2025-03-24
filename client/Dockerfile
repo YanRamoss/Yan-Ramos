@@ -1,18 +1,12 @@
-FROM node:20 AS build
+FROM node:latest
 
-WORKDIR /app
+WORKDIR /client
 
 COPY package*.json ./
-RUN npm install
+
+RUN npm install 
 
 COPY . .
 
-RUN npm run build
-
-FROM httpd:alpine
-
-COPY --from=build /var/www/yanramos.com.br/public_html/client/dist/ /var/www/yanramos.com.br/public_html/
-
-EXPOSE 80
-
-CMD ["httpd-foreground"]
+EXPOSE 8080
+CMD ["npm","run","serve"]
