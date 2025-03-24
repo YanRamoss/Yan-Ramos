@@ -8,5 +8,6 @@ RUN npm run build
 
 FROM httpd:alpine
 COPY --from=build /client/dist /var/www/yanramos.com.br/public_html/
+COPY yanramos.com.br.conf /etc/apache2/sites-available/yanramos.com.br.conf
 EXPOSE 80
 CMD ["httpd", "-D", "FOREGROUND"]
