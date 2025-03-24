@@ -7,7 +7,7 @@
         />
         <TitleComponent
           title="Testando Webhook"
-          subtitle="Técnico em Desenvolvimento de Sistemas, Graduando em Engenharia de Software"
+          subtitle=""
         />
         <div class="section">
           <div class="column">
