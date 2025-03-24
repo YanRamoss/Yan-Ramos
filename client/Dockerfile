@@ -1,12 +1,12 @@
-FROM node:latest
-
+# Etapa 1: Construção do projeto Vue
+FROM node:18-alpine AS build
 WORKDIR /client
-
 COPY package*.json ./
-
-RUN npm install 
-
+RUN npm install
 COPY . .
+RUN npm run build
 
-EXPOSE 8080
-CMD ["npm","run","build"] 
+FROM httpd:alpine
+COPY --from=build /client/dist /var/www/yanramos.com.br/public_html/
+EXPOSE 80
+CMD ["httpd", "-D", "FOREGROUND"]

@@ -1,9 +1,7 @@
-version: '3.8'
-
+version: "3"
 services:
-  client:
-    build:
-      context: ./client
-      dockerfile: Dockerfile
+  vue-client:
+    build: ./client
     ports:
-      - "8080:8080"
+      - "8080:80"
+    restart: always
