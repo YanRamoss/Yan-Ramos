@@ -41,3 +41,24 @@
         }
     }
 }
+
+@include media-screen(575px) {
+    .slider {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 20px !important;
+
+        * {
+            margin: 0 auto !important;
+        }
+
+        h1 {
+            font-size: 25px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+    }
+}

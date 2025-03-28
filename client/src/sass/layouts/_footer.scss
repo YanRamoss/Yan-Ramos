@@ -11,3 +11,13 @@ footer {
         fill: white;
     }
 }
+
+@include media-screen(575px) {
+    footer {
+        padding: 50px 25px !important;
+
+        * {
+            font-size: 14px;
+        }
+    }
+}
