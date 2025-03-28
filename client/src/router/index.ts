@@ -10,7 +10,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/portfolio',
     name: 'portfolio',
-    component: () => import(/* webpackChunkName: "portfolio" */ '../views/public/PortfolioView.vue')
+    component: () => import(/* webpackChunkName: "portfolio" */ '../views/public/InProcess.vue')
   },
 ]
 
