@@ -28,7 +28,7 @@
                 >Intercâmbio Cultural do Centro Paula Souza</a
               >, permitindo-me passar um mês na Inglaterra. Lá, aprimorei meu inglês
               e vivi experiências enriquecedoras, ampliando minha visão de mundo e
-              da tecnologia.
+              da tecnologia. 
             </p>
             <p><router-link to="/portfolio">Quer saber mais sobre mim? Clique aqui</router-link></p>
           </div>
