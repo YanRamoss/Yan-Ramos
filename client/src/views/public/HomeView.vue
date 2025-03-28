@@ -11,7 +11,7 @@
           </div>
           <div class="column">
             <p>
-              Minha  paixão por tecnologia começou na infância, explorando
+              Minha paixão por tecnologia começou na infância, explorando
               computadores e seus desafios. Aos 13 anos, iniciei meus estudos em
               Java e lógica de programação. Em 2022, ingressei na ETEC, onde
               aprofundei meus conhecimentos em desenvolvimento web, software e
