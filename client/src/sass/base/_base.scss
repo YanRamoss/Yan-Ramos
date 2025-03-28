@@ -32,35 +32,3 @@ p {
 .section {
   margin: 0px 150px;
 }
-
-@include media-screen(575px) {
-  .slider {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 20px !important;
-
-    * {
-      margin: 0 auto !important;
-    }
-  }
-
-  .section {
-    flex-direction: column !important;
-    margin: 0px calc(10%);
-
-    .column {
-      width: 100%;
-      align-items: center;
-      justify-content: center;
-
-      * {
-        width: 100%;
-      }
-    }
-  }
-
-  footer {
-    padding: 50px 50px !important;
-  }
-}
