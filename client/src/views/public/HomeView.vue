@@ -113,7 +113,7 @@
             </div>
             <div>
               <h2>E-mail</h2>
-              <h3>yan.ramoss10@gmail.com</h3>
+              <h3>eu@yanramos.com.br</h3>
             </div>
           </div>
         </div>
