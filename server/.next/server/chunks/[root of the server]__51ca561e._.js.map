@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 52, "column": 0}, "map": {"version":3,"sources":["file://C%3A/xampp/htdocs/Yan%20Ramos/2.0.0/server/src/app/pages/api/project/route.ts"],"sourcesContent":["export async function POST(req: Request){\r\n    try{const data = await req.json();\r\n    const { id } = data;\r\n    return Response.json({message:`${id} oiii`,status:200});\r\n    } catch(error) {\r\n        return Response.json({message: `${error}`, status: 500});\r\n    }\r\n}\r\nexport async function GET(req: Request){\r\n    try{const data = await req.json();\r\n    const { id } = data;\r\n    return Response.json({message:`${id} oiii`,status:200});\r\n    } catch(error) {\r\n        return Response.json({message: `${error}`, status: 500});\r\n    }\r\n}"],"names":[],"mappings":";;;;AAAO,eAAe,KAAK,GAAY;IACnC,IAAG;QAAC,MAAM,OAAO,MAAM,IAAI,IAAI;QAC/B,MAAM,EAAE,EAAE,EAAE,GAAG;QACf,OAAO,SAAS,IAAI,CAAC;YAAC,SAAQ,GAAG,GAAG,KAAK,CAAC;YAAC,QAAO;QAAG;IACrD,EAAE,OAAM,OAAO;QACX,OAAO,SAAS,IAAI,CAAC;YAAC,SAAS,GAAG,OAAO;YAAE,QAAQ;QAAG;IAC1D;AACJ;AACO,eAAe,IAAI,GAAY;IAClC,IAAG;QAAC,MAAM,OAAO,MAAM,IAAI,IAAI;QAC/B,MAAM,EAAE,EAAE,EAAE,GAAG;QACf,OAAO,SAAS,IAAI,CAAC;YAAC,SAAQ,GAAG,GAAG,KAAK,CAAC;YAAC,QAAO;QAAG;IACrD,EAAE,OAAM,OAAO;QACX,OAAO,SAAS,IAAI,CAAC;YAAC,SAAS,GAAG,OAAO;YAAE,QAAQ;QAAG;IAC1D;AACJ","debugId":null}}]
+}
