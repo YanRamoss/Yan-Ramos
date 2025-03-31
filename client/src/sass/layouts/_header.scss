@@ -64,12 +64,14 @@ header .desktop-menu {
   z-index: 100;
   margin: 25px 0px;
   transition: 0.5s ease-in-out;
+  z-index: 100;
 
   >a {
     color: white;
     width: 100%;
-    border-bottom: solid 1px rgb(97, 97, 97);
+    border-bottom: solid 1px rgb(107, 107, 107);
     padding: 5px 0px;
+    z-index: 99;
   }
 }
 
@@ -97,6 +99,5 @@ header .desktop-menu {
 
   .active {
     @include flex(column, center, unset, 10px);
-    transform: translateY(0);
   }
 }

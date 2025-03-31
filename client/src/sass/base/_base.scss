@@ -27,6 +27,7 @@ p {
 #app {
   @include flex(column, unset, unset, unset);
   @include prop(relative, 100vw, unset);
+  min-height: 400px;
 }
 
 .section {
