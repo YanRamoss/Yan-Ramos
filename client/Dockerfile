@@ -1,12 +1,15 @@
-FROM node:20
+FROM node:lts-alpine
 
-WORKDIR /client
+RUN npm install -g serve
+
+WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install 
+RUN npm install
 
 COPY . .
 
-EXPOSE 8080
-CMD ["npm","run","serve"]
+RUN npm run build
+
+CMD ["serve", "-s", "dist", "-l", "8080"]
