@@ -1,7 +1,7 @@
 .section {
     @include flex(row, unset, unset, 50px);
     @include prop(relative, auto, auto);
-    padding: 50px 0px;
+    padding: 20px 0px 50px 0px;
 
     >div {
         @include flex(column, unset, unset, unset);
@@ -15,7 +15,7 @@
 
 #about {
     img {
-        width: 75%;
+        width: 70%;
         clip-path: polygon(0 31%, 8% 15%, 15% 0, 85% 0%, 100% 0, 100% 15%, 100% 75%, 94% 88%, 88% 100%, 15% 100%, 0 100%, 0% 85%);
         border-radius: 3px;
     }
@@ -24,44 +24,49 @@
 #services {
     background-color: #f8f8f8;
 
-    .section>:nth-child(2) {
+    .column {
+        display: grid;
+        width: auto;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
 
-        border-radius: 2px;
-        box-shadow: 2px 2px 5px rgba(136, 136, 136, 0.548);
+        >div {
+            @include flex(column, unset, unset, 10px);
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: .5px .5px 5px rgba(107, 107, 107, 0.233);
+            cursor: pointer;
 
-        >ul {
-            @include flex(column, unset, unset, unset);
-            padding: 25px 10px;
-            letter-spacing: 0.8px;
+            >div span {
+                display: inline-flex;
+                width: auto;
+                padding: 10px;
+                margin: 0px 0px 10px 0px;
+                border-radius: 50%;
+                background-color: rgb(63, 63, 63);
 
-            ul,
-            li {
-                margin: 2px 0px 2px 25px;
-                list-style: none;
-            }
-
-            >li {
-                @include font($second-color, 17px, 600, $first-font);
-                @include text(uppercase, unset, unset, unset);
-                line-height: 25px;
-            }
-
-            >ul>li {
-                @include prop(relative, unset, unset);
-                padding-left: 20px;
-
-                &:before {
-                    content: '';
-                    @include prop(absolute, 6px, 6px);
-                    top: 50%;
-                    left: 6px;
-                    transform: translateY(-50%);
-                    border-radius: 50%;
-                    background-color: $first-color;
+                svg {
+                    stroke: white;
                 }
             }
+
+            h3 {
+                @include font(unset, 18px, 500, unset);
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 20px;
+
+            }
+        }
+
+        >div:hover h3 {
+            color: rgb(104, 104, 104);
         }
     }
+
 }
 
 #contact {
@@ -125,22 +130,25 @@
 
 @include media-screen(575px) {
     #services {
-        .section>:nth-child(2) {
-            * {
-                text-align: center;
-                margin: 0px !important;
-            }
+        .column {
+            grid-template-columns: 100% !important;
+        }
+    }
+}
 
-            *::before {
-                display: none;
-            }
+@include media-screen(768px) {
+    #about .section {
+        flex-direction: column !important;
 
-            >ul {
-                >li {
-                    font-size: 17px !important;
-                    margin: 5px 0px !important;
-                }
-            }
+        .column {
+            width: 100%;
+            align-items: center;
+        }
+    }
+
+    #services {
+        .column {
+            grid-template-columns: 50% 50%;
         }
     }
 }
