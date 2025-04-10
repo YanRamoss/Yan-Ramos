@@ -30,5 +30,13 @@ p {
 }
 
 .section {
+  @include flex(row, unset, unset, 50px);
+  @include prop(relative, auto, auto);
+  padding: 25px 0px 50px 0px;
   margin: 0px 100px;
+
+  >div {
+    @include flex(column, unset, unset, unset);
+    @include prop(relative, 100%, auto);
+  }
 }

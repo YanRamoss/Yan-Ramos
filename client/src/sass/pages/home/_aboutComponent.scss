@@ -1,0 +1,22 @@
+#about {
+    img {
+        width: 70%;
+        clip-path: polygon(0 31%, 8% 15%, 15% 0, 85% 0%, 100% 0, 100% 15%, 100% 75%, 94% 88%, 88% 100%, 15% 100%, 0 100%, 0% 85%);
+        border-radius: 3px;
+    }
+
+    p {
+        line-height: 30px;
+    }
+}
+
+@include media-screen(768px) {
+    #about .section {
+        flex-direction: column !important;
+
+        .column {
+            width: 100%;
+            align-items: center;
+        }
+    }
+}

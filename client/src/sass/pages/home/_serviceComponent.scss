@@ -1,0 +1,63 @@
+#services {
+    background-color: #f8f8f8;
+
+    .column {
+        display: grid;
+        width: auto;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+
+        >div {
+            @include flex(column, unset, unset, 10px);
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: .5px .5px 5px rgba(107, 107, 107, 0.233);
+            cursor: pointer;
+
+            >div span {
+                display: inline-flex;
+                width: auto;
+                padding: 10px;
+                margin: 0px 0px 10px 0px;
+                border-radius: 50%;
+                background-color: rgb(63, 63, 63);
+
+                svg {
+                    stroke: white;
+                }
+            }
+
+            h3 {
+                @include font(unset, 18px, 500, unset);
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 20px;
+
+            }
+        }
+
+        >div:hover h3 {
+            color: rgb(104, 104, 104);
+        }
+    }
+
+}
+
+@include media-screen(575px) {
+    #services {
+        .column {
+            grid-template-columns: 100% !important;
+        }
+    }
+}
+
+@include media-screen(768px) {
+    #services {
+        .column {
+            grid-template-columns: 50% 50%;
+        }
+    }
+}
