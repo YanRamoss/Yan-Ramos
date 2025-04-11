@@ -1,4 +1,4 @@
-#projects .column {
+#portfolio .column {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 20px;
@@ -12,36 +12,39 @@
     .img {
         @include flex(column, center, center, 5px);
         @include prop(relative, 100%, 130px);
-        background-image: url('../../assets/imagem3.jpg');
-        background-position: center center;
-        background-size: cover;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
         border-bottom: solid 1px rgba(124, 124, 124, 0.363);
-        // clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+
+        >img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
 
         >a,
         >svg {
             display: inline;
             @include font(white, 16px, 400, unset);
             width: auto;
-            fill: white;
+            fill: #ffffff;
             opacity: 0;
             margin: 0px 0px -20px 0px;
             cursor: pointer;
+            z-index: 2;
         }
 
-        >:nth-child(1) {
+        >:nth-child(2) {
             border: solid 1.5px $first-color;
             padding: 8px;
             border-radius: 2px;
         }
     }
 
-    &:hover .img {
-        background-color: rgba(0, 0, 0, 0.534);
-        background-blend-mode: darken;
-        transition: .5s;
+    &:hover img {
+        filter: brightness(50%);
     }
 
     &:hover a,
@@ -85,7 +88,7 @@
 }
 
 @include media-screen(575px) {
-    #projects {
+    #portfolio {
         .column {
             grid-template-columns: 100% !important;
         }
@@ -93,7 +96,7 @@
 }
 
 @include media-screen(768px) {
-    #projects {
+    #portfolio {
         .column {
             grid-template-columns: 50% 50%;
         }

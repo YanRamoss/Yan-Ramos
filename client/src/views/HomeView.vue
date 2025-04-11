@@ -2,6 +2,7 @@
   <div id="app">
     <AboutComponent />
     <ServicesComponent />
+    <!-- <MySkillsComponent /> -->
     <ProjectsComponent />
     <ContactComponent />
   </div>
@@ -9,6 +10,7 @@
 <script lang="ts">
 import AboutComponent from '@/components/home/AboutComponent.vue';
 import ContactComponent from '@/components/home/ContactComponent.vue';
+import MySkillsComponent from '@/components/home/MySkillsComponent.vue';
 import ProjectsComponent from '@/components/home/ProjectsComponent.vue';
 import ServicesComponent from '@/components/home/ServicesComponent.vue';
 import { Options, Vue } from 'vue-class-component';
@@ -17,6 +19,7 @@ import { Options, Vue } from 'vue-class-component';
   components: {
     AboutComponent,
     ServicesComponent,
+    MySkillsComponent,
     ProjectsComponent,
     ContactComponent
   },
