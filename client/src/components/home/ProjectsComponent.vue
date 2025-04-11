@@ -6,7 +6,7 @@
 
             <div class="item">
               <div class="img">
-                  <img src="../../assets/portfolio.png" alt="">
+                  <img src="../../assets/mywebsite.png" alt="">
                   <a href="https://yanramos.com.br" target="_blank">Visualizar</a>
                   <a href="https://github.com/YanRamoss/Yan-Ramos" target="_blank">
                       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 30 30">
