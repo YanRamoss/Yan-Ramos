@@ -1,7 +1,7 @@
 <template>
     <footer>
         <div class="column">
-            <router-link to="/">Yan Ramos</router-link>
+            <router-link to="/">Yan Ramoss</router-link>
         </div>
         <div class="column">
             <p>All Rights Reserved © 2025</p>
